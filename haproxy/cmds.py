@@ -194,7 +194,7 @@ class listServers(baseStat):
         cols = self.getCols(res)
 
         for line in res.split('\n'):
-            if line.startswith(self.args['backend']):
+            if line.startswith(self.args['backend'] + ','):
                 # Lines for server start with the name of the
                 # backend.
 
